@@ -1,0 +1,45 @@
+ /* write a program on conditional statements */
+ 1)  # include <iostream<> 
+   using namespace std;
+    int main(){
+   int m;
+  cout<<"enter a number";
+  cin>>m;
+  if(m%3==0&&m%5==0)
+  {
+  cout<<m<<"Good number";
+  }
+  else if(m%3==0&&m%5!=0)
+  {
+  cout<<m<<"bad number";
+  }
+  else if(m%3!=0&&m%5==0)
+  {
+  cout<<m<<"poor number";
+  }
+   else
+   {
+   cout<<"-1";
+  }
+  return 0;
+  }
+2)  /* write a program for reversing a number */
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+	int n = 1234;
+	 cout << "The original number is " << n;
+	while ( n != 0 ){
+	
+		 int rev = rev * 10;
+		
+		// Add n modulus 10 to rev.
+		rev = rev + (n % 10);
+		n = n / 10;
+	}
+	cout << "\nThe reversed number is " << rev;
+	return 0;
+}
